@@ -1,0 +1,6 @@
+<h2>Google Drive Files</h2>
+<ul>
+    {% for file in files %}
+    <li>{{ file.name }} - <a href="/download/{{ file.id }}/">Download</a></li>
+    {% endfor %}
+</ul>
